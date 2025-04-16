@@ -21,3 +21,9 @@ Route::put('update-emp/{id}',[UserController::class,'updateEmp']);
 
 //search employee
 Route::get('search',[UserController::class,'search']);
+
+//user add sucessfully page
+Route::view('add-sucess','add-success');
+
+//user delete sucessfully page
+Route::view('delete-sucess','delete-sucess');

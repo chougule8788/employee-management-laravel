@@ -23,7 +23,7 @@ class UserController extends Controller
         $employee->age = $request->age;
         $employee->save();
         if($employee){
-            return view('add-success');
+            return redirect('add-sucess');
         }
 
     }
@@ -31,7 +31,7 @@ class UserController extends Controller
     public function delete($id){
          $isDelete = Employee::destroy($id);
          if($isDelete){
-            return view('delete-sucess');
+            return redirect('delete-sucess');
          }
     }
 
