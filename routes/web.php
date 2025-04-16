@@ -17,7 +17,7 @@ Route::get('delete/{id}',[UserController::class,'delete']);
 //update employee
 Route::get('update/{id}',[UserController::class,'update']);
 
-Route::put('update-emp/{id}',[UserController::class,'updateEmp']);
+Route::get('update-emp/{id}',[UserController::class,'updateEmp']);
 
 //search employee
 Route::get('search',[UserController::class,'search']);

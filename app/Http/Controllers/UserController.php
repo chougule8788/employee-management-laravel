@@ -50,7 +50,7 @@ class UserController extends Controller
         if($employee->save()){
             return view('update-sucess');
         }
-        return $request->input();
+        
     }
 
     public function search(Request $request){
