@@ -122,6 +122,10 @@
     a:hover {
       background-color: #0056b3;
     }
+
+    .w-5.h-5{
+      width: 20px;
+    }
  
   </style>
 </head>
@@ -169,7 +173,9 @@
     
       </tbody>
     </table>
+    {{ $employee->links() }}
   </div> 
+
 
     
 </body>

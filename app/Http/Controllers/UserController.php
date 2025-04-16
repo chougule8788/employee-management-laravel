@@ -11,7 +11,7 @@ class UserController extends Controller
 {
     //
     public function list(){
-        $employee = new Employee()::all();
+        $employee = new Employee()::paginate(10);
 
         return view('add-table',['employee'=>$employee]);
     }
